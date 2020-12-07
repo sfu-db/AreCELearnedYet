@@ -1,6 +1,6 @@
 # Are We Ready For Learned Cardinality Estimation?
 
-# Development Environment Setup
+## Development Environment Setup
 
 Setup:
 * Install Just
@@ -13,7 +13,7 @@ We define all the commands used in this work in `Justfile`. Run `just -l` for a 
 
 All the environmental configurations (e.g. data path, database configurations) are set in file `.env`.
 
-# Dataset
+## Dataset
 
 Download the real-world datasets and workloads from [here](https://www.dropbox.com/s/5bmvc1si5hysapf/data.tar.gz?dl=0).
 
@@ -48,7 +48,7 @@ just append-data-cor 123 census13 original 0.2
 ```
 The appended data will be located at: `{DATA_ROOT}/{dataset name}/{version}+{version}_{update}_{interval}.pkl`
 
-# Workload
+## Workload
 We adopt a unified workload generation framework to produce synthetic queries that we use in all the experiments. Specifically, in our framework each query is generated through three steps:
 
 1. Choose a set of attributes to place predicates.
@@ -77,7 +77,7 @@ just wkld-vood dom1000 skew1.0_corr1.0
 just wkld-label dom1000 skew1.0_corr1.0 vood
 ```
 
-# Train & Test
+## Train & Test
 
 Training and test commands for all the estimators are defined in `Justfile`, for hyper-parameters used and examples please refer to [hyper-params.md](./hyper-params.md).
 
@@ -107,7 +107,7 @@ where {model update time} can be extracted through parsing the logging files. `d
 
 For convinience usage, we put the hyperparameters of deferent models in `dynamic-exp/best_hp.py`. It copies the best hyperparameters we tested from [hyper-params.md](./hyper-params.md).
 
-# Code References:
+## Code References:
 
 * Naru (including implementation of BayesNet): https://github.com/naru-project/naru
 * MSCN: https://github.com/andreaskipf/learnedcardinalities
