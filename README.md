@@ -1,5 +1,7 @@
 # Are We Ready For Learned Cardinality Estimation?
 
+**Our paper could be found https://arxiv.org/abs/2012.06743.**
+
 ## Development Environment Setup
 
 Setup:
