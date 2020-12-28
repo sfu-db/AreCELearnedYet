@@ -687,7 +687,7 @@ report-error file dataset='census13':
     poetry run python -m lecarb report -d{{dataset}} --params \
         "{'file': '{{file}}'}"
 
-report-error-dynamic dataset='census13' old_new_file new_new_file T update_time:
+report-error-dynamic dataset old_new_file new_new_file T update_time:
     poetry run python -m lecarb report-dynamic --params \
         "{'old_new_file': '{{old_new_file}}', 'new_new_file': '{{new_new_file}}', 'T':{{T}}, update_time:{{update_time}}}"
 
