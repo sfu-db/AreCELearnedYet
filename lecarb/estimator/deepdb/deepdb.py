@@ -220,7 +220,7 @@ def update_deepdb(seed: int, dataset: str, new_version: str, workload: str, para
     old_table = load_table(dataset, old_version)
     # load updated data and save to csv
     updated_dataset = load_table(dataset, new_version)
-    updated_dataset.data = updated_dataset.data.iloc[len(old_table.data):].sample(frac=0.1)
+    updated_dataset.data = updated_dataset.data.iloc[len(old_table.data):].sample(frac=0.01)
     updated_dataset.data.reset_index(drop=True)
     updated_dataset.version += '_cut'
     updated_dataset.name += '_cut'
