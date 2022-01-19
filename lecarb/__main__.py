@@ -14,7 +14,7 @@ Usage:
   lecarb train [-s <seed>] [-d <dataset>] [-v <version>] [-w <workload>] [-e <estimator>] [--params <params>] [--sizelimit <sizelimit>]
   lecarb test [-s <seed>] [-d <dataset>] [-v <version>] [-w <workload>] [-e <estimator>] [--params <params>] [--overwrite]
   lecarb report [-d <dataset>] [--params <params>]
-  lecarb report-dynmaic [-d <dataset>] [--params <params>]
+  lecarb report-dynamic [-d <dataset>] [--params <params>]
   lecarb update-train [-s <seed>] [-d <dataset>] [-v <version>] [-w <workload>] [-e <estimator>] [--params <params>] [--overwrite]
 
 Options:
