@@ -1,6 +1,6 @@
 # Are We Ready For Learned Cardinality Estimation?
 
-**Our paper can be found at https://arxiv.org/abs/2012.06743.**
+**Our paper can be found at [arxiv](https://arxiv.org/abs/2012.06743) and [vldb](http://www.vldb.org/pvldb/vol14/p1640-wang.pdf).**
 
 ## Development Environment Setup
 
